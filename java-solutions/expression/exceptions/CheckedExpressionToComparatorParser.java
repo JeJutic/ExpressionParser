@@ -13,7 +13,7 @@ public class CheckedExpressionToComparatorParser extends ExpressionToComparatorP
                 List.of(
                         new CheckedAddPlugin(), new CheckedSubtractPlugin(),
                         new CheckedMultiplyPlugin(), new CheckedDividePlugin(),
-                        new CheckedSetPlugin(), new CheckedClearPlugin()
+                        new SetPlugin(), new ClearPlugin()
                 ),
                 List.of(
                         new CheckedNegatePlugin(), new CountPlugin()
