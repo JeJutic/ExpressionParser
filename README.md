@@ -19,7 +19,7 @@ At the moment there are 2 parsers:
   - Clear operation (x set y): sets x'th y'th bit to 0 (in case of overflow uses modular arithmetic)
   Set and Clear have the lowest priority.
 * `expression.parser.ExpressionParser` which accepts all the same operations but in case
-of overflow or division by zero throws `expression.exceptions.ParsingException`
+of overflow throws `expression.exceptions.OverflowException`
 
 ## Requirements
 
@@ -30,8 +30,8 @@ of overflow or division by zero throws `expression.exceptions.ParsingException`
 Java source root is _/java-solutions_, all _.java_ files should be compiled.\
 To run parser with user-friendly arithmetic and parsing error output use:
 ```
- java expression.exceptions.Main "[expression]" [value of 'x' variable] [value of 'y' variable]
- [value of 'z' varibale]
+ java expression.exceptions.Main "[expression]" [value of 'x'] [value of 'y']
+ [value of 'z']
 ```
 Note that variable names in the expression should be _x_, _y_ and _z_. For example:
 ```
