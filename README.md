@@ -14,7 +14,7 @@ At the moment there are 2 parsers:
   - Subtract operation (x - y)
   - Multiply operation (x * y)
   - Divide operation (x / y)
-  - Negate operation (-x)
+  - Negate operation (- x)
   - Set operation (x set y): sets x'th y'th bit to 1 (in case of overflow uses modular arithmetic)
   - Clear operation (x set y): sets x'th y'th bit to 0 (in case of overflow uses modular arithmetic)
   Set and Clear have the lowest priority.
@@ -30,8 +30,7 @@ of overflow throws `expression.exceptions.OverflowException`
 Java source root is _/java-solutions_, all _.java_ files should be compiled.\
 To run parser with user-friendly arithmetic and parsing error output use:
 ```
- java expression.exceptions.Main "[expression]" [value of 'x'] [value of 'y']
- [value of 'z']
+ java expression.exceptions.Main "[expression]" [value of 'x'] [value of 'y'] [value of 'z']
 ```
 Note that variable names in the expression should be _x_, _y_ and _z_. For example:
 ```
